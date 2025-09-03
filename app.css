@@ -1,0 +1,345 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     min-height: 100vh;
+}
+
+.headingbox2 {
+    display: none;
+}
+
+img:first-child {
+    width: 30%;
+    align-self: center;
+    margin: 7% 0%;
+}
+
+.heading1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 1000;
+  color: rgb(0, 0, 0);
+  margin: 5% auto;
+  font-size: 2.3rem;
+  text-align: center;
+}
+
+.headingbox {
+display: flex;
+    flex-direction: row;
+  align-items: center;
+  width:inherit;
+  gap: 10px;
+}
+
+.leftimg , .rightimg {
+    min-width: 50%;
+
+}
+
+
+p:first-of-type , .paragraph2 {
+    font-weight: lighter;
+    font-family: 'Poppins', sans-serif;
+    align-self: center;
+    color: rgba(20, 19, 19, 0.486);
+    margin: 5% auto;
+    text-align: center;
+
+}
+
+.downloadbtn {
+    background-color: #1E93AB;
+    border-radius: 2rem;
+    padding: 2% 5%;
+    color: white;
+    border: 1px solid white;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.downloadbtn span {
+    color: #37ceec;
+    font-weight: 700;
+}
+
+.secondbtn {
+     background-color: #8918ac;
+    border-radius: 2rem;
+    padding: 2% 5%;
+    color: white;
+    border: 1px solid white;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin: 3% auto;
+}
+
+.photogrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+    gap: 10px;
+    justify-content: center;  /* centers the grid horizontally */
+    align-items: center;      /* centers items vertically */
+    margin: 4% 3%;
+}
+
+.photogrid img {
+    width: 90%;         /* smaller than full cell width */
+    height: auto;       /* keep proportions */
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: auto;       /* center inside each cell */
+}
+
+
+.heading2 {
+      font-family: 'Poppins', sans-serif;
+  color: rgb(69, 207, 173);
+  margin: 5% auto;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: lighter;
+  letter-spacing: 5px;
+}
+
+
+.heading3 {
+    font-family: 'Poppins', sans-serif;
+  font-weight: 1000;
+  color: rgb(0, 0, 0);
+    margin: 0 auto; /* top 0, bottom 0.5rem */
+  font-size: 2.1rem;
+ text-align: center;
+
+}
+
+.timeline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Top half */
+.top-half {
+    width: 100%;
+    height: 18em; /* same as h-64 in Tailwind */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* Line going downward */
+.line-down {
+    width: 1px;
+    height: 5rem; /* same as h-20 in Tailwind */
+    background-color: #d1d5db; /* Tailwind gray-300 */
+}
+
+/* Circle in the middle */
+.circle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4rem;  /* w-16 */
+    height: 4rem; /* h-16 */
+    border: 2px solid #d1d5db; /* gray-300 */
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.125rem; /* text-lg */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Bottom half */
+.bottom-half {
+    width: 100%;
+    height: 16em; /* same as h-64 */
+    background-color: #3b82f6; /* Tailwind blue-500 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 1.5rem; /* optional spacing */
+}
+
+/* Footer image */
+.footerend {
+    width: 100%;
+    height: 18em; /* or use min-height if content may grow */
+    background-image: 
+        linear-gradient(rgba(14, 226, 233, 0.5), rgba(0,0,0,0.5)),
+        url('image-footer.jpg');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* Headings and text */
+.bottom-half h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem; /* adjust as needed */
+    margin-top: 1.5rem;
+}
+
+.bottom-half p {
+    color: white;
+    text-align: center;
+    padding: 0 1.5rem;
+    margin-top: 0.5rem;
+}
+
+
+.downloadbtn2  {
+     background-color: #8918ac;
+    border-radius: 2rem;
+    padding: 2% 5%;
+    color: white;
+    border: 1px solid #8918ac;
+    font-weight: 700;
+    font-size: 1.3rem;
+
+}
+
+.downloadbtn2 span {
+    color: #8aecdc;
+    font-weight: 700;
+}
+
+.footerp {
+    color: rgba(240, 235, 241, 0.774) !important;
+   
+}
+
+.btngroup {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    min-width: 400px;
+}
+
+
+@media(min-width:768px) {
+
+.photogrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 2 equal columns */
+
+}
+
+.btngroup {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    min-width: 400px;
+}
+
+.downloadbtn{
+    margin: 0 auto;
+}
+
+.secondbtn {
+    margin: 0  auto;
+}
+
+
+p:first-of-type {
+    font-size: 1.2rem;
+    margin: 2% auto;
+}
+
+.heading1 {
+    margin: 1% auto;
+}
+
+.heading2 {
+    font-size: 1.3rem;
+    letter-spacing: 10px;
+}
+
+.paragraph2 {
+    
+    margin: 3% 5%;
+    width: 80%;
+    font-size:larger;
+}
+
+.heading3 {
+    font-size: 3.5rem;
+}
+
+
+
+}
+
+@media (min-width: 1024px) {
+
+.gp1 {
+    display: none;
+}
+
+.headingbox2 {
+    display:flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 10%;
+margin: 2% 5%;
+    
+}
+
+.headingbox2 img {
+
+    display: flex;
+    flex-grow: 1;
+    /* smaller than full cell width */
+    height: auto;       /* keep proportions */
+    object-fit: cover;
+    border-radius: 15px;
+    flex-shrink: 2;
+
+}
+
+.footh {
+    width: 100%;
+}
+
+.footerend {
+    display: flex;
+    flex-direction: row !important;
+}
+
+.footerp {
+    text-align: center;
+    max-width: 30%;
+}
+
+
+
+.downloadbtn2  {
+    
+    border-radius: 1.5rem;
+    padding: 1% 2%;
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin-right: 7%;
+
+}
+
+.footerhead {
+    margin-left: 7%;
+}
+
+
+
+}
